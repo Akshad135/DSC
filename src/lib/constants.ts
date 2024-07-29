@@ -15,7 +15,7 @@ import sharad from "./img/Members/SHARAD.jpg";
 import aditiContent from "./img/Members/ADITI Content.jpg";
 import vatsal from "./img/Members/VATSAL.jpg";
 import pushpendra from "./img/Members/PUSHPENDRA.jpg";
-import sivia from "./img/Members/SIVIA.webp";
+import sivia from "./img/Members/SIVIA.jpeg";
 import aditya from "./img/Members/ADITYA.jpg";
 import devarsh from "./img/Members/devarsh.jpg";
 
@@ -98,6 +98,8 @@ export interface Team {
   objectPosition?: string;
   objectEffect?: "fill" | "contain" | "cover" | "none" | "scale-down";
   scale?: number;
+  translateY?: number;
+  translateX?: number;
 }
 
 export const team: Team[] = [
@@ -106,7 +108,6 @@ export const team: Team[] = [
     position: "President",
     name: "Sivia Anzal",
     exec: true,
-    objectPosition: "center",
   },
   {
     img: pulashya,
@@ -144,7 +145,6 @@ export const team: Team[] = [
     img: aditya,
     position: "Technical Team",
     name: "Aditya Kharmitkar",
-    // objectPosition: "center",
     scale: 1.1,
   },
   {
@@ -162,7 +162,7 @@ export const team: Team[] = [
     img: sarthak,
     position: "Media and photography Team",
     name: "Sarthak",
-    objectPosition: "center",
+    objectEffect: "fill",
   },
   {
     img: pushpendra,
@@ -178,7 +178,7 @@ export const team: Team[] = [
     img: aditiContent,
     position: "Content Team",
     name: "Aditi Bathla",
-    // objectEffect: "fill",
     objectPosition: "top",
+    scale: 1,
   },
 ];

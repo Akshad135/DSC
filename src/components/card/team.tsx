@@ -6,16 +6,21 @@ export interface Team {
   img: StaticImageData;
   position: string;
   name: string;
-  exec: boolean;
+  exec?: boolean;
   objectPosition?: string;
   objectEffect?: "fill" | "contain" | "cover" | "none" | "scale-down";
   scale?: number;
+  translateY?: number;
+  translateX?: number;
 }
 interface Props {
   person: Team;
 }
 
 const TeamCard = ({ person }: Props) => {
+  const scaleValue = person.scale || 1;
+  const translateYValue = person.translateY || 0;
+  const translateXValue = person.translateX || 0;
   return (
     <div className="space-y-2">
       <div
@@ -25,7 +30,6 @@ const TeamCard = ({ person }: Props) => {
           overflow: "hidden",
         }}
       >
-        {" "}
         <Image
           src={person.img}
           alt={person.name}
@@ -33,7 +37,7 @@ const TeamCard = ({ person }: Props) => {
           style={{
             objectFit: person.objectEffect || "cover",
             objectPosition: person.objectPosition || "center top",
-            transform: `scale(${person.scale || 1})`,
+            transform: `scale(${scaleValue}) translate(${translateXValue}%, ${translateYValue}%)`,
           }}
         />
       </div>
