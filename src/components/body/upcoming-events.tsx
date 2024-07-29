@@ -24,11 +24,11 @@ const UpcomingEvents = () => {
           <div className="flex items-center space-x-3 max-md:hidden">
             <Separator className="bg-white w-7" />
             <span className="font-normal text-2xl max-lg:text-xl ">
-              Lorem ipsum dolor sit amet
+              Upcoming Events
             </span>
           </div>
           <h1 className="text-7xl max-lg:text-5xl font-medium bg-gradient-to-b from-gradient-first via-gradient-second to-gradient-third bg-clip-text text-transparent max-md:text-center">
-            Lorem ipsum dolor
+            Hackathon ?!
           </h1>
           <p className="max-xs:text-justify font-light">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

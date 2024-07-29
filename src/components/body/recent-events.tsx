@@ -4,6 +4,7 @@ import React from "react";
 import BreadCrumb from "../common/bread-crumb";
 import "react-multi-carousel/lib/styles.css";
 import { events } from "@/lib/constants";
+import Image from "next/image";
 import { Separator } from "../ui/separator";
 import { motion } from "framer-motion";
 
@@ -19,7 +20,7 @@ const RecentEvents = () => {
           duration: 0.5,
         }}
       >
-        <BreadCrumb title="Recent events" subtitle="ASDFGHJKL" />
+        <BreadCrumb title="" subtitle="Recent events" />
         <div className="space-y-12">
           {events.map((item, index) => (
             <div
@@ -28,7 +29,25 @@ const RecentEvents = () => {
                 index === 1 && "md:flex-row-reverse md:space-x-reverse"
               }`}
             >
-              <div className="border p-4 rounded-xl h-64 w-[40%] max-md-xs:w-[50%] max-md:w-full"></div>
+              <div
+                className="border p-4 rounded-xl h-64 w-[40%] max-md-xs:w-[50%] max-md:w-full"
+                style={{
+                  position: "relative",
+                  overflow: "hidden",
+                }}
+              >
+                {item.img && (
+                  <Image
+                    src={item.img}
+                    alt={item.title}
+                    fill
+                    style={{
+                      objectFit: "cover",
+                      objectPosition: " top",
+                    }}
+                  />
+                )}
+              </div>
               <div className="w-[60%] max-md:w-full pt-7 space-y-3">
                 <div className="flex items-center space-x-3 pl-3 ">
                   <Separator className="bg-white w-7" />
