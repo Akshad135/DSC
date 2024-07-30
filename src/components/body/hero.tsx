@@ -34,20 +34,26 @@ const Hero = () => {
       >
         <div className="relative space-y-7 flex  flex-col mt-10">
           <div>
-            <p className="text-sm">Data Science Club</p>
+            <p className="text-md">Data Science Club</p>
             <h1 className="text-[85px] leading-none max-sm-xs:text-7xl max-xs:text-5xl font-extrabold bg-gradient-to-b from-gradient-first via-gradient-second to-gradient-third bg-clip-text text-transparent">
               Welcomes You
             </h1>
           </div>
           <div className="space-y-2">
-            <p className="font-bold text-sm">Who We Are</p>
-            <p className="ml-5 md-xs:w-[600px] text-justify font-light text-sm">
-              Founded by a group of dedicated students, the Data Science Club
-              brings together individuals from diverse academic backgrounds who
-              share a common interest in data science, machine learning,
-              artificial intelligence, and related technologies. Our members
-              range from beginners to advanced practitioners, all united by a
-              desire to explore the fascinating world of data.
+            <p className="font-bold text-md">Who We Are</p>
+            <p className="ml-5 md-xs:w-[610px] text-justify font-light text-lg">
+              Welcome to the Data Science Club, where curiosity meets
+              innovation! Whether you're a beginner eager to dive into data or a
+              seasoned pro ready to tackle complex challenges, our club is your
+              go-to community. We foster a collaborative environment where
+              learning is hands-on, and ideas flourish. Join us for our
+              thrilling club events and let's revel in the passion of our
+              incredible community!
+            </p>
+            <br></br>
+            <p className="ml-5 md-xs:w-[610px] text-justify font-light text-lg">
+              "Data is a precious thing and will last longer than the systems
+              themselves." –Tim Berners Lee
             </p>
           </div>
           <div className="max-xs:flex justify-center">

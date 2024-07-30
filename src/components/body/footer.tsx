@@ -29,7 +29,7 @@ const Footer = () => {
         <div className="flex sm-xs:justify-center sm-xs:items-center flex-col space-y-2 max-sm-xs:mt-10">
           <div className="uppercase text-lg font-medium">send us an email</div>
           <Separator className="bg-white w-52" />
-          <div className="text-lg font-medium">axyz@gmail.com</div>
+          <div className="text-lg font-medium">dsc.vitb@vitbhopal.ac.in</div>
         </div>
       </div>
       <div className="sm-xs:hidden space-x-3 flex justify-center">
@@ -54,7 +54,7 @@ const Footer = () => {
         </div>
         <div className="font-normal text-sm max-sm-xs:text-xs text-center">
           <div>Created by Web Team | DSC VITB</div>
-          <div>© 2024 DSC Club - VIT Bhopa</div>
+          <div>© 2024 DSC Club - VIT Bhopal</div>
         </div>
       </div>
     </motion.section>
