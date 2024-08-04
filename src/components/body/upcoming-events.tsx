@@ -5,6 +5,8 @@ import { Button } from "../ui/button";
 import { Separator } from "../ui/separator";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Image, { StaticImageData } from "next/image";
+import upcoming_event from "./../../lib/img/upcoming events/flames2.png";
 
 const UpcomingEvents = () => {
   return (
@@ -19,7 +21,25 @@ const UpcomingEvents = () => {
           duration: 0.5,
         }}
       >
-        <div className="w-[35%] max-md:w-full max-lg-md:w-[40%] bg-white/10 md:h-[70vh] h-[400px] "></div>
+        <div
+          className="w-[35%] max-md:w-full max-lg-md:w-[40%] bg-white/10 md:h-[70vh] h-[400px] "
+          style={{
+            position: "relative",
+            overflow: "hidden",
+          }}
+        >
+          {upcoming_event && (
+            <Image
+              src={upcoming_event}
+              alt={"flames"}
+              fill
+              style={{
+                objectFit: "cover",
+                objectPosition: " top",
+              }}
+            />
+          )}
+        </div>
         <div className="w-[50%] max-md:w-full space-y-4">
           <div className="flex items-center space-x-3 max-md:hidden">
             <Separator className="bg-white w-7" />
@@ -28,7 +48,7 @@ const UpcomingEvents = () => {
             </span>
           </div>
           <h1 className="text-7xl max-lg:text-5xl font-medium bg-gradient-to-b from-gradient-first via-gradient-second to-gradient-third bg-clip-text text-transparent max-md:text-center">
-            Hackathon ?!
+            Flames 2.0
           </h1>
           <p className="max-xs:text-justify font-light">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
