@@ -139,7 +139,7 @@ export const team: Team[] = [
     position: "Web Team",
     name: "Sharad Jhadav",
     objectPosition: "top",
-    objectEffect: "fill",
+    scale: 1.1,
   },
   {
     img: aditya,
