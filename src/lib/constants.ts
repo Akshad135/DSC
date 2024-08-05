@@ -36,10 +36,10 @@ export const nav: Navigation[] = [
   //   title: "Gallery",
   //   path: "/gallery",
   // },
-  // {
-  //   title: "Registration",
-  //   path: "/#",
-  // },
+  {
+    title: "Registration",
+    path: "/#",
+  },
   {
     title: "Contact",
     path: "/",

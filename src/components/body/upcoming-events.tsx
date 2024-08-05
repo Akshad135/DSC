@@ -51,15 +51,22 @@ const UpcomingEvents = () => {
             Flames 2.0
           </h1>
           <p className="max-xs:text-justify font-light">
+            The Flames 2.0 is an upcoming event being organized by the Data
+            Science Club. It will be led by two distinguished speakers. Mr Akash
+            Raj, founder of CloudyML, who will discuss the career paths and
+            roadmap in the Data Science industry. The second session will be led
+            by Major Sushant Singh, an army veteran and ex- special forces, who
+            will give his insights about the importance of Data Science in the
+            national security and defense field. Through these interactive
+            sessions, participants will deepen their understanding in these
+            fields and will explore more in the vast world of Data Science.
+          </p>
+          {/* <p className="max-xs:text-justify font-light">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          </p>
-          <p className="max-xs:text-justify font-light">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          </p>
+          </p> */}
           <div className="max-md:justify-center flex">
-            <Link href={"#"}>
+            <Link href={"https://forms.gle/1VbTdek8s5hQLE8T6"}>
               <Button asChild>
                 <div className="space-x-2">
                   <span>Register now</span>
