@@ -56,10 +56,10 @@ const Hero = () => {
               themselves." –Tim Berners Lee
             </p>
           </div>
-          <div className="max-xs:flex justify-center">
+          {/* <div className="max-xs:flex justify-center">
             <Button className="px-10">Explore</Button>
             <Button variant={"ghost"}>Fun Time</Button>
-          </div>
+          </div> */}
         </div>
       </motion.div>
     </section>
