@@ -44,10 +44,10 @@ const Menu = () => {
               </Fragment>
             ))}
             <div className="mt-10 flex justify-center">
-              <Link href={"#"}>
+              <Link href={"/gallery"}>
                 <Button variant={"ghost"}>Log in</Button>
               </Link>
-              <Link href={"#"}>
+              <Link href={"/gallery"}>
                 <Button>Sign up</Button>
               </Link>
             </div>

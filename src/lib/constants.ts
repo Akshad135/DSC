@@ -32,13 +32,13 @@ export const nav: Navigation[] = [
     title: "Past Events",
     path: "/recent-events",
   },
-  // {
-  //   title: "Gallery",
-  //   path: "/gallery",
-  // },
+  {
+    title: "Gallery",
+    path: "/gallery",
+  },
   {
     title: "Registration",
-    path: "/#",
+    path: "/gallery",
   },
   {
     title: "Contact",
