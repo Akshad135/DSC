@@ -31,10 +31,10 @@ const Header = () => {
           ))}
         </nav>
         <div className="max-lg:hidden">
-          <Link href={"#"}>
+          <Link href={"/gallery"}>
             <Button variant={"ghost"}>Log in</Button>
           </Link>
-          <Link href={"#"}>
+          <Link href={"/gallery"}>
             <Button>Sign up</Button>
           </Link>
         </div>
