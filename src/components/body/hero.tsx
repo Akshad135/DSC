@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative scroll-margin flex bg-radial-gradient snap-center"
+      className="relative scroll-margin flex bg-radial-gradient"
     >
       <motion.div
         className="absolute -top-[80px] right-36 max-xs:-right-44"
@@ -43,17 +43,17 @@ const Hero = () => {
             <p className="font-bold text-md">Who We Are</p>
             <p className="ml-5 md-xs:w-[610px] text-justify font-light text-lg">
               Welcome to the Data Science Club, where curiosity meets
-              innovation! Whether you're a beginner eager to dive into data or a
-              seasoned pro ready to tackle complex challenges, our club is your
-              go-to community. We foster a collaborative environment where
+              innovation! Whether you&apos;re a beginner eager to dive into data
+              or a seasoned pro ready to tackle complex challenges, our club is
+              your go-to community. We foster a collaborative environment where
               learning is hands-on, and ideas flourish. Join us for our
-              thrilling club events and let's revel in the passion of our
+              thrilling club events and let&apos;s revel in the passion of our
               incredible community!
             </p>
             <br></br>
             <p className="ml-5 md-xs:w-[610px] text-justify font-light text-lg">
-              "Data is a precious thing and will last longer than the systems
-              themselves." –Tim Berners Lee
+              &apos;Data is a precious thing and will last longer than the
+              systems themselves.&apos; –Tim Berners Lee
             </p>
           </div>
           {/* <div className="max-xs:flex justify-center">

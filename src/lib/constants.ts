@@ -18,6 +18,7 @@ import pushpendra from "./img/Members/PUSHPENDRA.jpg";
 import sivia from "./img/Members/SIVIA.jpeg";
 import aditya from "./img/Members/ADITYA.jpg";
 import devarsh from "./img/Members/devarsh.jpg";
+import abha from "./img/Members/Dr.Abha-Trivedi.jpg";
 
 export const nav: Navigation[] = [
   {
@@ -104,15 +105,15 @@ export interface Team {
 
 export const team: Team[] = [
   {
-    img: sivia,
-    position: "President",
-    name: "Sivia Anzal",
+    img: abha,
+    position: "Faculty Co-ordinator",
+    name: "Dr. Abha Trivedi",
     exec: true,
   },
   {
-    img: pulashya,
-    position: "Faculty Co-ordinator",
-    name: "Dr. Abha Trivedi",
+    img: sivia,
+    position: "President",
+    name: "Sivia Anzal",
     exec: true,
   },
   {

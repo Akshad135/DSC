@@ -7,7 +7,7 @@ import Header from "@/components/header";
 
 export default function Home() {
   return (
-    <main className="max-xs:overflow-x-hidden max-w-screen-xl mx-auto min-h-screen snap-y snap-mandatory md:h-screen scroll-smooth overflow-y-scroll">
+    <main className="max-xs:overflow-x-hidden max-w-screen-xl mx-auto min-h-screen">
       <Header />
       <Hero />
       <UpcomingEvents />

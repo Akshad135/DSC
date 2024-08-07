@@ -10,7 +10,7 @@ import upcoming_event from "./../../lib/img/upcoming events/flames2.png";
 
 const UpcomingEvents = () => {
   return (
-    <section className="flex mt-10 md:h-screen items-center snap-center">
+    <section className="flex mt-10 md:h-screen items-center">
       <motion.div
         className="flex px-16 max-sm:px-10 lg-md:justify-between max-lg-md:space-x-16 max-md:space-x-0 max-md:space-y-5  w-full max-md:flex-col"
         initial={{ opacity: 0, translateY: 20 }}
@@ -66,7 +66,7 @@ const UpcomingEvents = () => {
             eiusmod tempor incididunt ut labore et dolore magna aliqua. 
           </p> */}
           <div className="max-md:justify-center flex">
-            <Link href={"https://forms.gle/1VbTdek8s5hQLE8T6"}>
+            <Link href={"https://forms.gle/1VbTdek8s5hQLE8T6"} target="_blank">
               <Button asChild>
                 <div className="space-x-2">
                   <span>Register now</span>

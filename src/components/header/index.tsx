@@ -19,11 +19,17 @@ const Header = () => {
         duration: 0.4,
       }}
     >
-      <div className="max-w-screen-xl mx-auto px-10 max-md:px-6 max-sm-xs:px-5 justify-between flex items-center h-[80px] text-sm font-medium">
+      <div
+        className="max-w-screen-xl mx-auto px-10 max-md:px-6 max-sm-xs:px-5 justify-between flex items-center h-[80px] text-sm font-medium"
+        style={{ backgroundColor: "#010314", opacity: 1 }}
+      >
         <Link href={"/"}>
           <Image alt="logo" src={"/logo.webp"} width={170} height={170} />
         </Link>
-        <nav className="flex space-x-5 border px-6 py-3 rounded-full backdrop-blur max-lg:hidden">
+        <nav
+          className="flex space-x-5 border px-6 py-3 rounded-full backdrop-blur max-lg:hidden"
+          style={{ borderColor: "#4A4A4A" }}
+        >
           {nav.map((item, index) => (
             <Link href={item.path} key={index} className="flex items-center">
               <span className="font-normal">{item.title}</span>

@@ -10,11 +10,11 @@ import { motion } from "framer-motion";
 
 const RecentEvents = () => {
   return (
-    <section className="py-10 px-16 max-sm:px-10 max-md:mt-10 snap-center">
+    <section className="py-10 px-16 max-sm:px-10 max-md:mt-10">
       <motion.div
         initial={{ opacity: 0, translateY: 20 }}
         whileInView={{ opacity: 1, translateY: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.3 }}
         transition={{
           ease: "easeInOut",
           duration: 0.5,

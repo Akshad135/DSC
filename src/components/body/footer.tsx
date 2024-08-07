@@ -10,7 +10,8 @@ import { motion } from "framer-motion";
 const Footer = () => {
   return (
     <motion.section
-      className="p-10 space-y-7 max-sm-xs:space-y-3 max-sm-xs:p-5 snap-center"
+      id="footer"
+      className="p-10 space-y-7 max-sm-xs:space-y-3 max-sm-xs:p-5"
       initial={{ opacity: 0, translateY: 20 }}
       whileInView={{ opacity: 1, translateY: 0 }}
       viewport={{ once: true }}
@@ -47,7 +48,7 @@ const Footer = () => {
         </Link>
         <div className="space-x-3 max-sm-xs:hidden">
           {socials.map((social, index) => (
-            <Link href={social.path} key={index}>
+            <Link href={social.path} key={index} target="_blank">
               <span className="font-semibold text-lg">{social.title}</span>
             </Link>
           ))}
